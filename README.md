@@ -1,3 +1,9 @@
+![GitHub Stars](https://img.shields.io/github/stars/Yashjain329/billboard_detector?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/Yashjain329/billboard_detector?style=social)
+![GitHub License](https://img.shields.io/github/license/Yashjain329/billboard_detector)
+![Last Commit](https://img.shields.io/github/last-commit/Yashjain329/billboard_detector)
+
+
 # Billboard Detector
 
 ## Overview
