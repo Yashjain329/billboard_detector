@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: ./backend
+    container_name: billboard-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build: .
+    container_name: billboard-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
