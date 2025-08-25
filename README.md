@@ -1,13 +1,7 @@
-![GitHub Stars](https://img.shields.io/github/stars/Yashjain329/billboard_detector?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/Yashjain329/billboard_detector?style=social)
-![GitHub License](https://img.shields.io/github/license/Yashjain329/billboard_detector)
-![Last Commit](https://img.shields.io/github/last-commit/Yashjain329/billboard_detector)
-
-
 # Billboard Detector
 
-## Overview
-Billboard Detector is a Flutter application designed to detect and analyze billboards in images or real-time camera feeds. This project serves as a starting point for building a mobile application with Flutter, leveraging its capabilities for cross-platform development.
+## About
+Billboard Detector is a Flutter-based mobile application designed to detect and analyze billboards in images or real-time camera feeds. Leveraging image processing techniques, it offers a user-friendly interface and cross-platform support for iOS and Android, making it a versatile tool for identifying billboard content in various environments.
 
 ## Features
 - **Billboard Detection**: Identify billboards in images or video streams using image processing techniques.
@@ -38,10 +32,36 @@ Billboard Detector is a Flutter application designed to detect and analyze billb
    ```
    Ensure a device or emulator is connected.
 
-### Project Structure
-- `lib/`: Contains the main Dart code for the Flutter application.
-- `assets/`: Stores images or other static resources used in the app.
-- `pubspec.yaml`: Configuration file for Flutter dependencies and assets.
+## Code Structure
+Below is an overview of the project's codebase organization:
+
+```
+billboard_detector/
+├── android/                # Android-specific configuration and native code
+├── ios/                    # iOS-specific configuration and native code
+├── lib/                    # Main Dart source code for the Flutter app
+│   ├── main.dart           # Entry point of the application
+│   ├── models/             # Data models for billboard detection (e.g., Billboard, ImageData)
+│   ├── services/           # Business logic and services (e.g., image processing, camera handling)
+│   ├── utils/              # Utility functions and helpers (e.g., image manipulation, constants)
+│   ├── widgets/            # Reusable UI components (e.g., custom buttons, image display)
+│   └── screens/            # UI screens (e.g., home screen, results screen)
+├── assets/                 # Static resources (e.g., images, fonts)
+│   ├── images/             # Image assets used in the app
+│   └── models/             # Pre-trained models or configuration files for detection
+├── test/                   # Unit and widget tests
+├── pubspec.yaml           # Flutter configuration file for dependencies and assets
+└── README.md              # Project documentation
+```
+
+### Key Files and Directories
+- **lib/main.dart**: Initializes the app and sets up the root widget.
+- **lib/models/**: Contains data models to structure billboard-related data.
+- **lib/services/**: Handles core functionality like image processing and camera integration.
+- **lib/utils/**: Includes helper functions for tasks like image resizing or error handling.
+- **lib/widgets/**: Reusable UI components to maintain a consistent look and feel.
+- **lib/screens/**: Individual screens for different app views (e.g., camera view, results).
+- **assets/**: Stores static assets and pre-trained models for billboard detection.
 
 ## Usage
 1. Launch the app on your device or emulator.
@@ -49,12 +69,7 @@ Billboard Detector is a Flutter application designed to detect and analyze billb
 3. View the results displayed on the screen with highlighted billboard regions.
 
 ## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit (`git commit -m "Add feature"`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a pull request.
+Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
 
 ## Resources
 For more information on Flutter development:
